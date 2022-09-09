@@ -4,7 +4,7 @@ import {Table} from 'react-bootstrap';
 import { Button, ButtonToolbar } from 'react-bootstrap';
 import { AddEmpModal } from './AddEmpModal';
 import { EditEmpModal } from './EditEmpModal';
-
+//employee
 export class Employee extends Component{
 
     constructor(props){
