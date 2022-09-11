@@ -25,7 +25,7 @@ namespace WebAPI.Controllers
             _configuration = configuration;
             _env = env;
         }
-
+        //view
         [HttpGet]
         public JsonResult Get()
         {
@@ -55,7 +55,7 @@ namespace WebAPI.Controllers
             return new JsonResult(table);
         }
 
-
+        //create
         [HttpPost]
         public JsonResult Post(Employee emp)
         {
@@ -87,7 +87,7 @@ namespace WebAPI.Controllers
             return new JsonResult("Added Successfully!");
         }
 
-
+        //edit
         [HttpPut]
         public JsonResult Put(Employee emp)
         {
@@ -118,7 +118,7 @@ namespace WebAPI.Controllers
             return new JsonResult("Updated Successfully!");
         }
 
-
+        //delete
         [HttpDelete("{id}")]
         public JsonResult Delete(int id)
         {
